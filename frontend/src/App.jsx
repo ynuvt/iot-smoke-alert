@@ -5,7 +5,7 @@ import Dashboard from './components/Dashboard';
 import Sidebar from './components/Sidebar';
 import AlertBanner from './components/AlertBanner';
 
-const BACKEND_URL = 'http://localhost:5000';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
 
 export default function App() {
   const [sensors, setSensors] = useState([]);
